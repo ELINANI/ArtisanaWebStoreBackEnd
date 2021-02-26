@@ -46,6 +46,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
         http.authorizeRequests().antMatchers("/registerClient").permitAll();
         http.authorizeRequests().antMatchers("/registerArtisan").permitAll();
         http.authorizeRequests().antMatchers("/sendMailToVerify").permitAll();
+        http.authorizeRequests().antMatchers("/article").permitAll();
+        http.authorizeRequests().antMatchers("/CommandeVerify").permitAll();
         http.csrf().disable();
         http.csrf().disable().authorizeRequests().antMatchers("/authenticate").permitAll().antMatchers(HttpMethod.OPTIONS,"/**")
                 .permitAll().anyRequest().authenticated()

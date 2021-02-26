@@ -94,4 +94,9 @@ public class LoginController {
          mail.sendEmail(mailVerify.getEmail() ,"votre code de verification" ,"102030");
         return new ResponseEntity<String>("mail sent" ,HttpStatus.OK);
     }
+    @PostMapping("/CommandeVerify")
+    public ResponseEntity<String>SendMailToCMD(@RequestBody Email mailVerify){
+        mail.sendEmail(mailVerify.getEmail() ,"validé votre commande " ,"Voila le lien de confirmation : http://localhost:4200/dashboard");
+        return new ResponseEntity<String>("mail sent" ,HttpStatus.OK);
+    }
 }

@@ -30,7 +30,7 @@ public class ArticleVO implements Serializable {
     public ArticleVO(long codeArticle,String description, String imageCommandeView,
                      String imageCommandeInterface, String imageCommandeInterfaceTwo,
                      String imageCommandeInterfaceThree, double prixArticle, int qteArticle ,
-                      DesignationVO designation , List<BoutiqueVO> boutiqueVOList ,List<LigneCommandeArticleVO> ligneCommandeArticleVOList) {
+                      List<BoutiqueVO> boutiqueVOList ,List<LigneCommandeArticleVO> ligneCommandeArticleVOList) {
         this.codeArticle = codeArticle;
         this.description = description;
         this.imageCommandeView = imageCommandeView;
@@ -39,7 +39,7 @@ public class ArticleVO implements Serializable {
         this.imageCommandeInterfaceThree = imageCommandeInterfaceThree;
         this.prixArticle = prixArticle;
         this.qteArticle = qteArticle;
-        this.designation = designation;
+
         this.boutiqueList = boutiqueVOList;
         this.lignCommandeArticle =ligneCommandeArticleVOList;
 

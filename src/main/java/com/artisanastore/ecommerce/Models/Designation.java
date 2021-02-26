@@ -20,9 +20,6 @@ public class Designation  implements Serializable {
     @Column(unique = true)
     private String descriptionDesignation;
 
-    @OneToMany(mappedBy = "designation")
-    @Basic(fetch = FetchType.LAZY)
-    private List<Article> articleList = new ArrayList<Article>();
 
     public Designation(String descriptionDesignation , List<Article> articleList) {
         this.descriptionDesignation = descriptionDesignation;
@@ -30,7 +27,6 @@ public class Designation  implements Serializable {
     }
 
     public void addArticle(Article art){
-        art.setDesignation(this);
-        articleList.add(art);
+
     }
 }

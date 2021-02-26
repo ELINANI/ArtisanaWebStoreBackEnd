@@ -12,7 +12,7 @@ public class ArticleConverter {
         ArticleVO vo = new ArticleVO(bo.getCodeArticle(),bo.getDescription(),bo.getImageCommandeView(),bo.getImageCommandeInterface(),
                 bo.getImageCommandeInterfaceTwo(),
                 bo.getImageCommandeInterfaceThree(),bo.getPrixArticle(),
-                bo.getQteArticle(),DesignationConverter.designationBoToVo(bo.getDesignation()),BoutiqueConverter.listBoutiqueBoToVo(bo.getBoutiqueList()) ,LignCommandeArticleConverter.listLigneCommandeArticleBoToVo(bo.getLignCommandeArticle()));
+                bo.getQteArticle(),BoutiqueConverter.listBoutiqueBoToVo(bo.getBoutiqueList()) ,LignCommandeArticleConverter.listLigneCommandeArticleBoToVo(bo.getLignCommandeArticle()));
         return  vo ;
     }
 

@@ -6,6 +6,7 @@ import com.artisanastore.ecommerce.Domaine.ArticleVO;
 import com.artisanastore.ecommerce.Domaine.ArtisanVO;
 import com.artisanastore.ecommerce.Domaine.Converter.ArticleConverter;
 import com.artisanastore.ecommerce.Models.Article;
+import com.artisanastore.ecommerce.Models.Designation;
 import com.artisanastore.ecommerce.Service.IArticle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;

@@ -9,7 +9,7 @@ import java.util.List;
 public class DesignationConverter {
 
     public static DesignationVO designationBoToVo(Designation bo){
-        DesignationVO vo = new DesignationVO(bo.getCodeDesignation(),bo.getDescriptionDesignation() , ArticleConverter.listArticleBoToVo(bo.getArticleList()));
+        DesignationVO vo = new DesignationVO(bo.getCodeDesignation(),bo.getDescriptionDesignation());
         return vo;
     }
 

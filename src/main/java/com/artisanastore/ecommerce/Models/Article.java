@@ -42,9 +42,7 @@ public class Article implements Serializable {
     }
 
 
-    @ManyToOne
-    @JoinColumn(name = "designationArticle")
-    private Designation designation;
+
 
     @ManyToMany
     @Basic(fetch = FetchType.LAZY)

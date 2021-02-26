@@ -14,10 +14,10 @@ public class DesignationVO  implements Serializable {
     private String descriptionDesignation;
     private List<ArticleVO> articleList = new ArrayList<ArticleVO>();
 
-    public DesignationVO(long codeDesignation ,String descriptionDesignation ,List<ArticleVO> articleList) {
+    public DesignationVO(long codeDesignation ,String descriptionDesignation) {
         this.codeDesignation = codeDesignation;
         this.descriptionDesignation = descriptionDesignation;
-        this.articleList =articleList;
+
 
     }
 }

@@ -40,7 +40,7 @@ public class ArtisanaStoreApplication implements CommandLineRunner {
     }
     @Override
     public void run(String... args) throws Exception {
-       // RoleVO r = new RoleVO(1 ,"Artisan");
+        //RoleVO r = new RoleVO(1 ,"Client");
         //iRole.addRole(r);
     }
 }
